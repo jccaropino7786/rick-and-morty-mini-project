@@ -1,10 +1,14 @@
 
 
 const SearchForm = () => {
+
+    const handleChange = (e) => {
+        // console.log(KeyboardEvent)
+    }
     
     return(
         <div className='Search'>
-            <input placeholder="Search by Name"/>
+            <input onChange={handleChange} placeholder="Search by Name"/>
         </div>
     )
 }
