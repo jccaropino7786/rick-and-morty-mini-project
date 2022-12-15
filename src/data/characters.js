@@ -1,5 +1,4 @@
-const charArray = 
-[
+const charArray = [
     {
       "id": 1,
       "name": "Rick Sanchez",
@@ -616,4 +615,4 @@ const charArray =
     }
   ]
 
-  export {charArray}
+  export default charArray
