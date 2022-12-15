@@ -2,7 +2,7 @@ import Character from "./Character"
 
 const CharacterList = ({charArray}) => {
 console.log(charArray)
-    // const { id, img, name, status, species, type, gender} = charArray
+    // const { id, image, name, status, species, type, gender} = charArray
 
     // console.log(charArray.id)
     const characterList = charArray.map((character) => (
@@ -11,8 +11,10 @@ console.log(charArray)
 
     return(
         <div className='CharactersList'> 
-            {characterList}
-            {/* <ul className='Characters' /> //mapCharacterList  */}
+            <ul className="Characters">
+                {characterList}
+            </ul>
+            
         </div>
     )
 }
