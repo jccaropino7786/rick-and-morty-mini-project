@@ -6,13 +6,14 @@ import CharacterList from './components/CharacterList';
 import { useState } from 'react'
 
 function App() {
+  const [queryChar, setQueryChar] = useState("")
 
-  const [queryCharacter, setQueryCharacter] = useState("all")
+  const filteredChar = charArray.filter(char => char.name.toLowerCase().includes(queryChar.toLowerCase()) )
 
   return (
     <div >
-        <SearchForm />
-        <CharacterList charArray={charArray}/>
+        <SearchForm query={queryChar} setQuery={setQueryChar}/>
+        <CharacterList charArray={filteredChar} />
     </div>
   );
 }
