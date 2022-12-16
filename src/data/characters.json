@@ -1,4 +1,5 @@
-const charArray = [
+{
+  "characters": [
     {
       "id": 1,
       "name": "Rick Sanchez",
@@ -614,5 +615,5 @@ const charArray = [
       "created": "2017-11-04T22:34:53.659Z"
     }
   ]
-
-  export default charArray
+}
+  

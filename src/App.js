@@ -8,7 +8,7 @@ import { useState } from 'react'
 function App() {
   const [queryChar, setQueryChar] = useState("")
 
-  const filteredChar = charArray.filter(char => char.name.toLowerCase().includes(queryChar.toLowerCase()) )
+  const filteredChar = charArray.filter(char => char.name.toLowerCase().includes(queryChar) )
 
   return (
     <div >
